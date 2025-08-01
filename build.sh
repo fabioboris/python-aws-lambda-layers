@@ -2,7 +2,7 @@
 
 # Usage: ./build.sh [layer_name] or ./build.sh (to build all)
 
-LAYERS=("psycopg2-binary" "psycopg3-binary" "pymysql" "pyjwt")
+LAYERS=("psycopg2-binary" "psycopg3-binary" "pymysql" "pyjwt" "python-jose")
 
 mkdir -p dist
 
