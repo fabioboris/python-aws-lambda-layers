@@ -7,6 +7,7 @@ This repository contains Dockerfiles for creating AWS Lambda layers with Python 
 - **psycopg2-binary**: PostgreSQL adapter for Python
 - **psycopg3-binary**: PostgreSQL adapter for Python (version 3)
 - **pymysql**: MySQL client library for Python
+- **pyjwt**: PyJWT - JSON Web Token implementation in Python
 
 ## Usage
 
@@ -20,6 +21,7 @@ This repository contains Dockerfiles for creating AWS Lambda layers with Python 
 ./build.sh psycopg2-binary
 ./build.sh psycopg3-binary
 ./build.sh pymysql
+./build.sh pyjwt
 ```
 
 ## Structure
@@ -35,5 +37,6 @@ All layer builds create `.zip` files in the `dist/` directory:
 - `dist/psycopg2-binary-layer.zip`
 - `dist/psycopg3-binary-layer.zip`
 - `dist/pymysql-layer.zip`
+- `dist/pyjwt-layer.zip`
 
 These `.zip` files can be uploaded directly to AWS Lambda as layers.
