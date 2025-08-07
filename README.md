@@ -24,6 +24,7 @@ This repository contains Dockerfiles for creating AWS Lambda layers with Python 
 ./build.sh pymysql
 ./build.sh pyjwt
 ./build.sh python-jose
+./build.sh requests
 ```
 
 ## Structure
@@ -41,5 +42,6 @@ All layer builds create `.zip` files in the `dist/` directory:
 - `dist/pymysql-layer.zip`
 - `dist/pyjwt-layer.zip`
 - `dist/python-jose-layer.zip`
+- `dist/requests-layer.zip`
 
 These `.zip` files can be uploaded directly to AWS Lambda as layers.
